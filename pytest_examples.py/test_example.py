@@ -21,6 +21,13 @@ def test_review_dinner():
     satisfied = goodbye("John",6) == True    
     assert satisfied == True
 
+def test_review_dinner_navigate():
+    greet("john")
+    talk("john")
+    invite_to_dinner()
+    satisfied = goodbye("John",4) 
+    assert satisfied == False
+
 
 
 
